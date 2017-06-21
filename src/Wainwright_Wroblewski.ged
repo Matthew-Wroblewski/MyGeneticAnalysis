@@ -7,6 +7,15 @@
 1 GEDC
 2 VERS 5.5
 2 FORM LINEAGE-LINKED
+0 @P18@ INDI 
+1 NAME John /Wainwright/
+1 BIRT 
+2 DATE 1612
+2 PLAC England
+1 DEAT 
+2 DATE 1684
+2 PLAC Bermuda
+1 SEX M
 0 @P1@ INDI 
 1 NAME Matthew /Wroblewski/
 1 BIRT 
@@ -147,15 +156,6 @@
 2 PLAC Bermuda
 1 DEAT 
 2 DATE 1703
-2 PLAC Bermuda
-1 SEX M
-0 @P18@ INDI 
-1 NAME John /Wainwright/
-1 BIRT 
-2 DATE 1612
-2 PLAC England
-1 DEAT 
-2 DATE 1684
 2 PLAC Bermuda
 1 SEX M
 
