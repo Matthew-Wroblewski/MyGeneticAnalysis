@@ -16,13 +16,129 @@
 2 DATE 1684
 2 PLAC Bermuda
 1 SEX M
-0 @P1@ INDI 
-1 NAME Matthew /Wroblewski/
+0 @P17@ INDI 
+1 NAME Benjamin /Wainwright/
 1 BIRT 
-2 DATE 04 Jul 1982
+2 DATE 1658
+2 PLAC Bermuda
+1 DEAT 
+2 DATE 1703
+2 PLAC Bermuda
+1 SEX M
+0 @P17@ INDI 
+1 NAME John Stowe /Wainwright/
+1 BIRT 
+2 DATE 1795
+2 PLAC Bermuda
+1 DEAT 
+2 DATE 1860
+2 PLAC Bermuda
+1 SEX M
+0 @P16@ INDI 
+1 NAME Emelius Van Buren/Wainwright/
+1 BIRT 
+2 DATE 20 Sep 1859
+2 PLAC Trinidad
+1 DEAT 
+2 DATE Jul 1937
+2 PLAC Trinidad
+1 SEX M
+0 @P4@ INDI 
+1 NAME Marion /Urichuk/
+1 BIRT 
+2 DATE 14 Oct 1882
+2 PLAC Ukraine
+1 DEAT 
+2 DATE 01 Apr 1965
 2 PLAC New Jersey
 1 SEX M
-1 FAMC @F82@
+0 @P6@ INDI 
+1 NAME Mary /Skokan/
+1 BIRT 
+2 DATE 1883
+2 PLAC Ukraine
+1 SEX F
+1 FAMS @F1@
+1 FAMS @F1@
+0 @P16@ INDI 
+1 NAME Emelius Stanley/Wainwright/
+1 BIRT 
+2 DATE 15 May 1891
+2 PLAC Trinidad
+1 DEAT 
+2 DATE Jul 1973
+2 PLAC Colorado
+1 SEX M
+0 @P5@ INDI 
+1 NAME John /Urichuk/
+1 BIRT 
+2 DATE 25 Nov 1907
+2 PLAC Ukraine
+1 DEAT 
+2 DATE Sep 1967
+1 SEX M
+1 FAMC @F1@
+1 FAMS @F2@
+0 @P14@ INDI 
+1 NAME Vera /Yurko/
+1 BIRT 
+2 DATE 12 Dec 1922
+2 PLAC Ukraine
+1 DEAT 
+2 DATE Jul 1974
+2 PLAC New Jersey
+1 SEX F
+1 FAMC @F25@
+1 FAMS @F2@
+0 @P9@ INDI 
+1 NAME John /Wroblewski/
+1 BIRT 
+2 DATE 16 Apr 1926
+2 PLAC New Jersey
+1 DEAT 
+2 DATE 25 Mar 2000
+1 SEX M
+1 FAMC @F23@
+1 FAMS @F24@
+0 @P8@ INDI 
+1 NAME Helen /Urichuk/
+1 BIRT 
+2 DATE 1927
+2 PLAC Ukraine
+1 DEAT 
+2 DATE Unknown
+1 SEX F
+1 FAMC @F1@
+0 @P7@ INDI 
+1 NAME Pauline /Urichuk/
+1 BIRT 
+2 DATE 21 Oct 1928
+2 PLAC Ukraine
+1 DEAT 
+2 DATE 08 Jul 1991
+2 PLAC Bound Brook
+1 SEX F
+1 FAMC @F1@
+1 FAMS @F24@
+0 @P15@ INDI 
+1 NAME Stanely J /Wainwright/
+1 BIRT 
+2 DATE 13 Mar 1929
+2 PLAC New York
+1 DEAT 
+2 DATE 05 Sep 2005
+2 PLAC New Jersey
+1 SEX M
+0 @P13@ INDI 
+1 NAME Henry /Urichuk/
+1 BIRT 
+2 DATE 1946
+2 PLAC Ukraine
+1 DEAT 
+2 DATE Unknown
+1 SEX M
+1 FAMC @F2@
+1 FAMS @F26@
 0 @P2@ INDI 
 1 NAME Michael /Wroblewski/ Sr.
 1 BIRT 
@@ -39,70 +155,6 @@
 1 SEX F
 1 FAMC @F83@
 1 FAMS @F82@
-0 @P4@ INDI 
-1 NAME Marion /Urichuk/
-1 BIRT 
-2 DATE 14 Oct 1882
-2 PLAC Ukraine
-1 DEAT 
-2 DATE 01 Apr 1965
-2 PLAC New Jersey
-1 SEX M
-1 FAMS @F1@
-0 @P5@ INDI 
-1 NAME John /Urichuk/
-1 BIRT 
-2 DATE 25 Nov 1907
-2 PLAC Ukraine
-1 DEAT 
-2 DATE Sep 1967
-1 SEX M
-1 FAMC @F1@
-1 FAMS @F2@
-0 @P6@ INDI 
-1 NAME Mary /Skokan/
-1 BIRT 
-2 DATE 1883
-2 PLAC Ukraine
-1 SEX F
-1 FAMS @F1@
-0 @P7@ INDI 
-1 NAME Pauline /Urichuk/
-1 BIRT 
-2 DATE 21 Oct 1928
-2 PLAC Ukraine
-1 DEAT 
-2 DATE 08 Jul 1991
-2 PLAC Bound Brook
-1 SEX F
-1 FAMC @F1@
-1 FAMS @F24@
-0 @P8@ INDI 
-1 NAME Helen /Urichuk/
-1 BIRT 
-2 DATE 1927
-2 PLAC Ukraine
-1 DEAT 
-2 DATE Unknown
-1 SEX F
-1 FAMC @F1@
-0 @P9@ INDI 
-1 NAME John /Wroblewski/
-1 BIRT 
-2 DATE 16 Apr 1926
-2 PLAC New Jersey
-1 DEAT 
-2 DATE 25 Mar 2000
-1 SEX M
-1 FAMC @F23@
-1 FAMS @F24@
-0 @P10@ INDI 
-1 NAME John Jr. /Wroblewski/
-1 BIRT 
-2 DATE 1961
-2 PLAC New Jersey
-1 SEX M
-1 FAMC @F24@
 0 @P11@ INDI 
 1 NAME Carol /Wroblewski/
 1 BIRT 
@@ -110,55 +162,20 @@
 2 PLAC New Jersey
 1 SEX F
 1 FAMC @F24@
-0 @P13@ INDI 
-1 NAME Henry /Urichuk/
+0 @P10@ INDI 
+1 NAME John Jr. /Wroblewski/
 1 BIRT 
-2 DATE 1946
-2 PLAC Ukraine
-1 DEAT 
-2 DATE Unknown
-1 SEX M
-1 FAMC @F2@
-1 FAMS @F26@
-0 @P14@ INDI 
-1 NAME Vera /Yurko/
-1 BIRT 
-2 DATE 12 Dec 1922
-2 PLAC Ukraine
-1 DEAT 
-2 DATE Jul 1974
-2 PLAC New Jersey
-1 SEX F
-1 FAMC @F25@
-1 FAMS @F2@
-0 @P15@ INDI 
-1 NAME Stanely J /Wainwright/
-1 BIRT 
-2 DATE 13 Mar 1929
-2 PLAC New York
-1 DEAT 
-2 DATE 05 Sep 2005
+2 DATE 1961
 2 PLAC New Jersey
 1 SEX M
-0 @P16@ INDI 
-1 NAME Emelius Stanley/Wainwright/
+1 FAMC @F24@
+0 @P1@ INDI 
+1 NAME Michael /Wroblewski/
 1 BIRT 
-2 DATE 15 May 1891
-2 PLAC Trinidad
-1 DEAT 
-2 DATE Jul 1973
-2 PLAC Colorado
+2 DATE 16 Nov 1980
+2 PLAC New Jersey
 1 SEX M
-0 @P17@ INDI 
-1 NAME Benjamin /Wainwright/
-1 BIRT 
-2 DATE 1658
-2 PLAC Bermuda
-1 DEAT 
-2 DATE 1703
-2 PLAC Bermuda
-1 SEX M
-
+1 FAMC @F82@
 
 
 
