@@ -1,6 +1,3 @@
-# To change this license header, choose License Headers in Project Properties.
-# To change this template file, choose Tools | Templates
-# and open the template in the editor.
 import gedcom
 import image
 import time
@@ -62,7 +59,6 @@ if __name__ == "__main__":
         return point,
 
     # NJ[0] -74.4057, 40.0853  --- Ukraine[1] 31.1656, 49.3794 --- New York [2] -74.0059, 42.0, Trinidad [3] -61.2225, 10.6918 --- Bermuda [4] -64.7505, 32.3078 -- England[5] -1.4101,53.5598  ----
-    #
     # animation function.  This is called sequentially
     def animate(i):
         global texts, k, birthPlace, lons, lats
@@ -76,35 +72,35 @@ if __name__ == "__main__":
             if birthPlace[k] == "England":
                 lons, lats = (-1.4101,53.5598)
                 texts = plt.text(-52.00, 40.00, "Born in: " + birthPlace[k] + "\nBirth Date: " + birthYear[k] + "\nName: " + names[k] , color='red',
-                                 bbox=dict(facecolor='white', edgecolor='red'), fontsize=14)
+                                 bbox=dict(facecolor='white', edgecolor='red'), fontsize=11)
 
             elif birthPlace[k] == "New Jersey":
                 lons, lats = (-74.4057, 40.0853)
                 texts = plt.text(-52.00, 40.00,
                                  "Born in: " + birthPlace[k] + "\nBirth Date: " + birthYear[k] + "\nName: " + names[k], color='red',
-                                 bbox=dict(facecolor='white', edgecolor='red'), fontsize=14)
+                                 bbox=dict(facecolor='white', edgecolor='red'), fontsize=11)
             elif birthPlace[k] == "New York":
                 lons, lats = (-74.4057, 42.0853)
                 texts = plt.text(-52.00, 40.00,
                                  "Born in: " + birthPlace[k] + "\nBirth Date: " + birthYear[k] + "\nName: " + names[k], color='red',
-                                 bbox=dict(facecolor='white', edgecolor='red'), fontsize=14)
+                                 bbox=dict(facecolor='white', edgecolor='red'), fontsize=11)
             elif birthPlace[k] == "Ukraine":
                 lons, lats = (31.1656, 49.3794)
                 texts = plt.text(-52.00, 40.00,
                                  "Born in: " + birthPlace[k] + "\nBirth Date: " + birthYear[k] + "\nName: " + names[k], color='red',
-                                 bbox=dict(facecolor='white', edgecolor='red'), fontsize=14)
+                                 bbox=dict(facecolor='white', edgecolor='red'), fontsize=11)
             elif birthPlace[k] == "Trinidad":
                 lons, lats = (-61.2225, 10.6918)
                 texts = plt.text(-52.00, 40.00,
                                  "Born in: " + birthPlace[k] + "\nBirth Date: " + birthYear[k] + "\nName: " + names[k], color='red',
-                                 bbox=dict(facecolor='white', edgecolor='red'), fontsize=14)
+                                 bbox=dict(facecolor='white', edgecolor='red'), fontsize=11)
             elif birthPlace[k] == "Bermuda":
                 lons, lats = (-64.7505, 32.3078)
                 texts = plt.text(-52.00, 40.00,
                                  "Born in: " + birthPlace[k] + "\nBirth Date: " + birthYear[k] + "\nName: " + names[k], color='red',
-                                 bbox = dict(facecolor='white', edgecolor='red'), fontsize = 14)
+                                 bbox = dict(facecolor='white', edgecolor='red'), fontsize = 11)
             else:
-                lons, lats = (-500,-500)#locations[i]
+                lons, lats = (-500,-500)
 
         k = k + 1
         x, y = myMap(lons, lats)
@@ -112,7 +108,7 @@ if __name__ == "__main__":
         return point,
 
 #    # call the animator.  blit=True means only re-draw the parts that have changed.
-anim = animation.FuncAnimation(plt.gcf(), animate, init_func=init, frames=19, interval=1000, repeat = False, blit=False)
+anim = animation.FuncAnimation(plt.gcf(), animate, init_func=init, frames=19, interval=1500, repeat = False, blit=False)
 anim.save('mattsancestry.mp4', writer="ffmpeg")
 plt.show()
 
