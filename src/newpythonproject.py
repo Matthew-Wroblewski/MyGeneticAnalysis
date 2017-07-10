@@ -3,6 +3,7 @@
 # and open the template in the editor.
 import gedcom
 import image
+import time
 from mpl_toolkits.basemap import Basemap
 import matplotlib.pyplot as plt
 from matplotlib import animation
@@ -15,15 +16,13 @@ if __name__ == "__main__":
 
     gedcomFile = gedcom.parse("Wainwright_Wroblewski.ged")
 
-    me = gedcomFile.pointers['@P1@']
-    mom = gedcomFile.pointers['@P3@']
-    # print(me['BIRT'].place)
-    # print(family)
-    # print(mom)
+
     names = []
     birthYear = []
     birthPlace = []
     i = 0
+    k = 0
+    lons, lats = (-500, -500)
     for person in gedcomFile.individuals:
         i = i + 1
         birthPlaces = person['BIRT']
@@ -53,7 +52,7 @@ if __name__ == "__main__":
     print(names)
     print(birthYear)
 
-    myMap = Basemap(projection="mill", llcrnrlat=0, llcrnrlon=-120, urcrnrlat=75, urcrnrlon=45, resolution='l')
+    myMap = Basemap(llcrnrlat=0, llcrnrlon=-120, urcrnrlat=75, urcrnrlon=45, resolution='l')
     myMap.drawcoastlines()
     myMap.drawcountries(linewidth=1)
     myMap.drawstates(color='b')
@@ -66,6 +65,8 @@ if __name__ == "__main__":
 
     x = []
     y = []
+    texts = ""
+
 
     locations = ((-74.4057, 40.0853), (31.1656, 49.3794), (-74.0059, 42.0), (-61.2225, 10.6918), (-64.7505, 32.3078),
                  (-1.4101, 53.5598))
@@ -79,6 +80,8 @@ if __name__ == "__main__":
     plt.title("Birth Locations of Matt's Ancestors")
 
     point = myMap.plot(x, y, 'ro', markersize=20)[0]
+    i = 0
+
 
 
     def init():
@@ -89,29 +92,55 @@ if __name__ == "__main__":
     #
     # animation function.  This is called sequentially
     def animate(i):
-        plt.text(-1.4101,53.5598,"hisafdlksajfdkl")
-        if birthPlace[i] == "England":
+        global texts, k, lons, lats
+
+
+
+        if k > 0:
+            texts.remove()
+
+        if birthPlace[k] == "England":
             lons, lats = (-1.4101,53.5598)
-        elif birthPlace[i] == "New Jersey":
+            texts = plt.text(-40.00, 40.00, "Born in: " + birthPlace[k] + "\nBirth Date: " + birthYear[k] + "\nName: " + names[k] , color='red',
+                             bbox=dict(facecolor='white', edgecolor='red'), fontsize=18)
+
+        elif birthPlace[k] == "New Jersey":
             lons, lats = (-74.4057, 40.0853)
-        elif birthPlace[i] == "Ukraine":
+            texts = plt.text(-40.00, 40.00,
+                             "Born in: " + birthPlace[k] + "\nBirth Date: " + birthYear[k] + "\nName: " + names[k], color='red',
+                             bbox=dict(facecolor='white', edgecolor='red'), fontsize=18)
+
+        elif birthPlace[k] == "Ukraine":
             lons, lats = (31.1656, 49.3794)
-        elif birthPlace[i] == "Trinidad":
+            texts = plt.text(-40.00, 40.00,
+                             "Born in: " + birthPlace[k] + "\nBirth Date: " + birthYear[k] + "\nName: " + names[k], color='red',
+                             bbox=dict(facecolor='white', edgecolor='red'), fontsize=18)
+        elif birthPlace[k] == "Trinidad":
             lons, lats = (-61.2225, 10.6918)
-        elif birthPlace[i] == "Bermuda":
+            texts = plt.text(-40.00, 40.00,
+                             "Born in: " + birthPlace[k] + "\nBirth Date: " + birthYear[k] + "\nName: " + names[k], color='red',
+                             bbox=dict(facecolor='white', edgecolor='red'), fontsize=18)
+        elif birthPlace[k] == "Bermuda":
             lons, lats = (-64.7505, 32.3078)
+            texts = plt.text(--40.00, 40.00,
+                             "Born in: " + birthPlace[k] + "\nBirth Date: " + birthYear[k] + "\nName: " + names[k], color='red',
+                             bbox = dict(facecolor='white', edgecolor='red'), fontsize = 18)
         else:
             lons, lats = (0,0)#locations[i]
+
+        k = k + 1
         x, y = myMap(lons, lats)
         point.set_data(x, y)
         return point,
 
 
-    # call the animator.  blit=True means only re-draw the parts that have changed.
-    anim = animation.FuncAnimation(plt.gcf(), animate, init_func=init,
-                                   frames=10, interval=1000, blit=True)
-    plt.show()
-    fig=plt.figure()
-    ax = fig.add_subplot(111)
+    #  def updatefig(num):
+    #    time_text = "hello"
+#    # call the animator.  blit=True means only re-draw the parts that have changed.
+anim = animation.FuncAnimation(plt.gcf(), animate, init_func=init,
+                               frames=10, interval=750, blit=False)
 
-    print(locations[0])
+plt.show()
+
+
+#print(locations[0])
